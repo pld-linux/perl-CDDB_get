@@ -1,8 +1,12 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
-Version:	2.10
+Version:	2.11
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -24,6 +28,7 @@ Ten modu³/skrypt zbiera informacje z bazy CDDB dla p³yt audio CD.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
