@@ -3,7 +3,7 @@ Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
 Version:	1.61
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -11,6 +11,7 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	http://armin.emx.at/cddb/CDDB_get-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
