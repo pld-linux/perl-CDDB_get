@@ -3,7 +3,7 @@ Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
 Version:	1.4
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -33,14 +33,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{_bindir}/cddb.pl
+%attr(755,root,root) %{_bindir}/cddb.pl
 %{perl_sitelib}/CDDB_get.pm
 %{_mandir}/man3/*
