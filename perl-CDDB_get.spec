@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module/script gets the CDDB info for an audio cd.
 
 %description -l pl
-Ten modu³/skrytp zbiera informacje z bazy CDDB dla p³yt audio CD
+Ten modu³/skrytp zbiera informacje z bazy CDDB dla p³yt audio CD.
 
 %prep
 %setup -q -n CDDB_get-%{version}
