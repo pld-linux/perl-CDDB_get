@@ -10,7 +10,7 @@ Version:	2.11
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
