@@ -12,7 +12,7 @@ License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
 # Source0-md5:	6230c08a91ac819fceada544730623be
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
