@@ -7,12 +7,12 @@ Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
 Version:	2.11
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +26,8 @@ Ten modu³/skrypt zbiera informacje z bazy CDDB dla p³yt audio CD.
 %setup -q -n CDDB_get-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -41,8 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/cddb.pl
-%{perl_sitelib}/CDDB_get.pm
-%{perl_sitelib}/cddb.pl
-%dir %{perl_sitelib}/auto/CDDB_get
-%{perl_sitelib}/auto/CDDB_get/autosplit.ix
+%{perl_vendorlib}/CDDB_get.pm
+%{perl_vendorlib}/cddb.pl
+%dir %{perl_vendorlib}/auto/CDDB_get
+%{perl_vendorlib}/auto/CDDB_get/autosplit.ix
 %{_mandir}/man3/*
