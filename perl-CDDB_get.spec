@@ -3,6 +3,7 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
+%define	pdir	CDDB_get
 Summary:	CDDB - read the CDDB entry for an audio CD in your drive
 Summary(pl):	CDDB - odczyt informacji CDDB dla p³yty audio CD w napêdzie
 Name:		perl-CDDB_get
@@ -10,7 +11,7 @@ Version:	2.23
 Release:	1
 License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/F/FO/FONKIE/%{pdir}-%{version}.tar.gz
 # Source0-md5:	6230c08a91ac819fceada544730623be
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -24,7 +25,7 @@ This module/script gets the CDDB info for an audio cd.
 Ten modu³/skrypt zbiera informacje z bazy CDDB dla p³yt audio CD.
 
 %prep
-%setup -q -n CDDB_get-%{version}
+%setup -q -n %{pdir}-%{version}
 
 %build
 %{__perl} Makefile.PL \
