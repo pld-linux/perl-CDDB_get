@@ -2,8 +2,8 @@
 Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
-Version:	1.66
-Release:	2
+Version:	2.10
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
@@ -37,4 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/cddb.pl
 %{perl_sitelib}/CDDB_get.pm
+%{perl_sitelib}/cddb.pl
+%{perl_sitelib}/auto/CDDB_get/autosplit.ix
 %{_mandir}/man3/*
