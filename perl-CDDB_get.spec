@@ -7,8 +7,8 @@ Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module/script gets the CDDB info for an audio cd.
 
 %description -l pl
-Ten modu³/skrytp zbiera informacje z bazy CDDB dla p³yt audio CD.
+Ten modu³/skrypt zbiera informacje z bazy CDDB dla p³yt audio CD.
 
 %prep
 %setup -q -n CDDB_get-%{version}
@@ -38,5 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/cddb.pl
 %{perl_sitelib}/CDDB_get.pm
 %{perl_sitelib}/cddb.pl
+%dir %{perl_sitelib}/auto/CDDB_get
 %{perl_sitelib}/auto/CDDB_get/autosplit.ix
 %{_mandir}/man3/*
