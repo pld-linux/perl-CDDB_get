@@ -6,7 +6,7 @@ Version:	1.66
 Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
