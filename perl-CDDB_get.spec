@@ -3,7 +3,7 @@ Summary:	CDDB perl module
 Summary(pl):	Modu³ perla do CDDB
 Name:		perl-CDDB_get
 Version:	1.66
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/F/FO/FONKIE/CDDB_get-%{version}.tar.gz
