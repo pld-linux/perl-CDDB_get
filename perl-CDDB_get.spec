@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	CDDB_get
 Summary:	CDDB - read the CDDB entry for an audio CD in your drive
-Summary(pl):	CDDB - odczyt informacji CDDB dla p≥yty audio CD w napÍdzie
+Summary(pl.UTF-8):   CDDB - odczyt informacji CDDB dla p≈Çyty audio CD w napƒôdzie
 Name:		perl-CDDB_get
 Version:	2.27
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module/script gets the CDDB info for an audio cd.
 
-%description -l pl
-Ten modu≥/skrypt zbiera informacje z bazy CDDB dla p≥yt audio CD.
+%description -l pl.UTF-8
+Ten modu≈Ç/skrypt zbiera informacje z bazy CDDB dla p≈Çyt audio CD.
 
 %prep
 %setup -q -n %{pdir}-%{version}
