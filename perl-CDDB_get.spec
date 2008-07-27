@@ -8,7 +8,7 @@ Summary:	CDDB - read the CDDB entry for an audio CD in your drive
 Summary(pl.UTF-8):	CDDB - odczyt informacji CDDB dla płyty audio CD w napędzie
 Name:		perl-CDDB_get
 Version:	2.27
-Release:	1
+Release:	2
 License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/F/FO/FONKIE/%{pdir}-%{version}.tar.gz
