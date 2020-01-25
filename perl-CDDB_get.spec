@@ -3,7 +3,6 @@
 %bcond_without	tests # do not perform "make test"
 
 %define	pdir	CDDB_get
-%include	/usr/lib/rpm/macros.perl
 Summary:	CDDB - read the CDDB entry for an audio CD in your drive
 Summary(pl.UTF-8):	CDDB - odczyt informacji CDDB dla płyty audio CD w napędzie
 Name:		perl-CDDB_get
